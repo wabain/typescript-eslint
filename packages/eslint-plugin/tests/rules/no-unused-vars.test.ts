@@ -624,6 +624,11 @@ export default class Foo {
   }
 }
     `,
+    `
+export function flaggedAsString(flag: boolean, out: unknown): out is string {
+  return flag;
+}
+    `,
   ],
 
   invalid: [
